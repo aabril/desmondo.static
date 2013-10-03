@@ -15,30 +15,111 @@ html
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="icon", type="image/png", href="#{data.baseUrl}images/cabin.png")
-    link(href="#{data.baseUrl}styles/main.css", rel="stylesheet")
+    link(href="#{data.baseUrl}styles/sass-bootstrap.css", rel="stylesheet")
+    link(href="#{data.baseUrl}styles/custom.css", rel="stylesheet")
+
     block head
       title= "My Blog"
   body
-    nav
-      h1.name
-        a(href="#{data.baseUrl}") My Name
-      .menu.icon-menu
-      ul.nav-links
-        li.text-link
-          a(href="#{data.baseUrl}about.html") about
-        li.text-link
-          a(href="#{data.baseUrl}projects.html") projects
-        li.text-link
-          a(href="#{data.baseUrl}archives.html") archives
+    #wrapper
 
-      .social-media
-        a.icon-github(href="https://github.com/colinwren")
-        a.icon-twitter(href="https://twitter.com/colinwrenca")
-    .content
-      block content
-    a(href="http://cabinjs.com")
-      img.cabin(src="#{data.baseUrl}images/cabin.png", alt="cabin logo")
-    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js", type="text/javascript")
-    script(src="#{data.baseUrl}scripts/main.js", type="text/javascript")
-    script.
-        // Add your analytics code here
+      #sidebar-wrapper
+        ul.sidebar-nav
+          li.sidebar-brand
+            a(href="#") @desmondo
+          li
+            a(href="#") Tech
+          li
+            a(href="#") Personal
+          li
+            a(href="#") Demos            
+          li
+            a(href="#") Contact
+
+      #page-content-wrapper
+        .content-header
+          h1
+            //- Fix this: button navigation when mobile responsive
+            //- a(href="#").btn.btn-default
+            //-   i.icon-reorder 
+            a(href="#") Section
+            span(style="color:red;")  » 
+            a(href="#", style="color:black;") Article Title
+
+      .page-content.inset
+        
+        .row
+          .col-md-12
+            p.lead 
+             | This simple sidebar template has a hint of JavaScript to make the template responsive. 
+             | It also includes Font Awesome icon fonts.
+          .col-md-6
+            p.well The template still uses the default Bootstrap rows and columns.
+          .col-md-6
+            p.well But the full-width layout means that you wont be using containers.
+          .col-md-4
+            p.well Three Column Example
+          .col-md-4
+            p.well Three Column Example
+          .col-md-4
+            p.well You get the idea! Do whatever you want in the page content area!
+        
+        .row
+          .col-md-12
+            p.lead 
+             | This simple sidebar template has a hint of JavaScript to make the template responsive. 
+             | It also includes Font Awesome icon fonts.
+          .col-md-6
+            p.well The template still uses the default Bootstrap rows and columns.
+          .col-md-6
+            p.well But the full-width layout means that you wont be using containers.
+          .col-md-4
+            p.well Three Column Example
+          .col-md-4
+            p.well Three Column Example
+          .col-md-4
+            p.well You get the idea! Do whatever you want in the page content area!
+        
+        .row
+          .col-md-12
+            p.lead 
+             | This simple sidebar template has a hint of JavaScript to make the template responsive. 
+             | It also includes Font Awesome icon fonts.
+          .col-md-6
+            p.well The template still uses the default Bootstrap rows and columns.
+          .col-md-6
+            p.well But the full-width layout means that you wont be using containers.
+          .col-md-4
+            p.well Three Column Example
+          .col-md-4
+            p.well Three Column Example
+          .col-md-4
+            p.well You get the idea! Do whatever you want in the page content area!
+
+
+
+
+
+    //- nav
+    //-   h1.name
+    //-     a(href="#{data.baseUrl}") My Name
+    //-   .menu.icon-menu
+    //-   ul.nav-links
+    //-     li.text-link
+    //-       a(href="#{data.baseUrl}about.html") about
+    //-     li.text-link
+    //-       a(href="#{data.baseUrl}projects.html") projects
+    //-     li.text-link
+    //-       a(href="#{data.baseUrl}archives.html") archives
+
+    //-   .social-media
+    //-     a.icon-github(href="https://github.com/colinwren")
+    //-     a.icon-twitter(href="https://twitter.com/colinwrenca")
+    //- .content
+    //-   block content
+    //- a(href="http://cabinjs.com")
+    //-   img.cabin(src="#{data.baseUrl}images/cabin.png", alt="cabin logo")
+    //- script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js", type="text/javascript")
+    //- script(src="#{data.baseUrl}scripts/main.js", type="text/javascript")
+    //- script.
+    //-     // Add your analytics code here
