@@ -3,6 +3,15 @@
   transition: all 0.4s ease 0s;
 }
 
+.post-title {
+  display: none;
+}
+
+.post-head {
+  color: grey;
+  margin-bottom: 10px;
+}
+
 #sidebar-wrapper {
   margin-left: -250px;
   left: 250px;

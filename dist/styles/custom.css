@@ -5,6 +5,17 @@
 }
 
 /* line 6, ../../src/styles/custom.scss */
+.post-title {
+  display: none;
+}
+
+/* line 10, ../../src/styles/custom.scss */
+.post-head {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+/* line 15, ../../src/styles/custom.scss */
 #sidebar-wrapper {
   margin-left: -250px;
   left: 250px;
@@ -17,12 +28,12 @@
   transition: all 0.4s ease 0s;
 }
 
-/* line 18, ../../src/styles/custom.scss */
+/* line 27, ../../src/styles/custom.scss */
 #page-content-wrapper {
   width: 100%;
 }
 
-/* line 22, ../../src/styles/custom.scss */
+/* line 31, ../../src/styles/custom.scss */
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -31,46 +42,46 @@
   margin: 0;
   padding: 0;
 }
-/* line 29, ../../src/styles/custom.scss */
+/* line 38, ../../src/styles/custom.scss */
 .sidebar-nav li {
   line-height: 40px;
   text-indent: 20px;
 }
-/* line 32, ../../src/styles/custom.scss */
+/* line 41, ../../src/styles/custom.scss */
 .sidebar-nav li a {
   color: #999999;
   display: block;
   text-decoration: none;
 }
-/* line 36, ../../src/styles/custom.scss */
+/* line 45, ../../src/styles/custom.scss */
 .sidebar-nav li a:hover {
   color: #fff;
   /*background: rgba(255,255,255,0.2);*/
   background: red;
   text-decoration: none;
 }
-/* line 42, ../../src/styles/custom.scss */
+/* line 51, ../../src/styles/custom.scss */
 .sidebar-nav li a:active, .sidebar-nav li a:focus {
   text-decoration: none;
 }
-/* line 47, ../../src/styles/custom.scss */
+/* line 56, ../../src/styles/custom.scss */
 .sidebar-nav > .sidebar-brand {
   height: 65px;
   line-height: 60px;
   font-size: 18px;
 }
-/* line 51, ../../src/styles/custom.scss */
+/* line 60, ../../src/styles/custom.scss */
 .sidebar-nav > .sidebar-brand a {
   color: #fff;
   background: cornflowerblue;
 }
-/* line 54, ../../src/styles/custom.scss */
+/* line 63, ../../src/styles/custom.scss */
 .sidebar-nav > .sidebar-brand a:hover {
   color: #fff;
   background: slategrey;
 }
 
-/* line 62, ../../src/styles/custom.scss */
+/* line 71, ../../src/styles/custom.scss */
 .content-header {
   position: fixed;
   width: 100%;
@@ -80,7 +91,7 @@
   /*background: aliceblue;*/
   background: rgba(240, 248, 255, 0.95);
 }
-/* line 70, ../../src/styles/custom.scss */
+/* line 79, ../../src/styles/custom.scss */
 .content-header h1 {
   font-size: 22px;
   margin: 0;
@@ -89,17 +100,17 @@
   display: inline-block;
 }
 
-/* line 79, ../../src/styles/custom.scss */
+/* line 88, ../../src/styles/custom.scss */
 #menu-toggle {
   display: none;
 }
 
-/* line 83, ../../src/styles/custom.scss */
+/* line 92, ../../src/styles/custom.scss */
 .inset {
   padding: 80px 0 0 20px;
 }
 
-/* line 87, ../../src/styles/custom.scss */
+/* line 96, ../../src/styles/custom.scss */
 .blur {
   -webkit-filter: blur(20px);
   -moz-filter: blur(20px);
@@ -110,34 +121,34 @@
 }
 
 @media (max-width: 767px) {
-  /* line 97, ../../src/styles/custom.scss */
+  /* line 106, ../../src/styles/custom.scss */
   #wrapper {
     padding-left: 0;
   }
 
-  /* line 100, ../../src/styles/custom.scss */
+  /* line 109, ../../src/styles/custom.scss */
   #sidebar-wrapper {
     left: 0;
   }
 
-  /* line 103, ../../src/styles/custom.scss */
+  /* line 112, ../../src/styles/custom.scss */
   #wrapper.active {
     position: relative;
     left: 250px;
   }
-  /* line 106, ../../src/styles/custom.scss */
+  /* line 115, ../../src/styles/custom.scss */
   #wrapper.active #sidebar-wrapper {
     left: 250px;
     width: 250px;
     transition: all 0.4s ease 0s;
   }
 
-  /* line 112, ../../src/styles/custom.scss */
+  /* line 121, ../../src/styles/custom.scss */
   #menu-toggle {
     display: inline-block;
   }
 
-  /* line 115, ../../src/styles/custom.scss */
+  /* line 124, ../../src/styles/custom.scss */
   .inset {
     padding: 100px 0 0 15px;
   }
