@@ -12,7 +12,7 @@
 /* line 10, ../../src/styles/custom.scss */
 .post-head {
   color: grey;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* line 15, ../../src/styles/custom.scss */
@@ -100,17 +100,17 @@
   display: inline-block;
 }
 
-/* line 88, ../../src/styles/custom.scss */
+/* line 108, ../../src/styles/custom.scss */
 #menu-toggle {
   display: none;
 }
 
-/* line 92, ../../src/styles/custom.scss */
+/* line 112, ../../src/styles/custom.scss */
 .inset {
   padding: 80px 0 0 20px;
 }
 
-/* line 96, ../../src/styles/custom.scss */
+/* line 116, ../../src/styles/custom.scss */
 .blur {
   -webkit-filter: blur(20px);
   -moz-filter: blur(20px);
@@ -121,34 +121,34 @@
 }
 
 @media (max-width: 767px) {
-  /* line 106, ../../src/styles/custom.scss */
+  /* line 126, ../../src/styles/custom.scss */
   #wrapper {
     padding-left: 0;
   }
 
-  /* line 109, ../../src/styles/custom.scss */
+  /* line 129, ../../src/styles/custom.scss */
   #sidebar-wrapper {
     left: 0;
   }
 
-  /* line 112, ../../src/styles/custom.scss */
+  /* line 132, ../../src/styles/custom.scss */
   #wrapper.active {
     position: relative;
     left: 250px;
   }
-  /* line 115, ../../src/styles/custom.scss */
+  /* line 135, ../../src/styles/custom.scss */
   #wrapper.active #sidebar-wrapper {
     left: 250px;
     width: 250px;
     transition: all 0.4s ease 0s;
   }
 
-  /* line 121, ../../src/styles/custom.scss */
+  /* line 141, ../../src/styles/custom.scss */
   #menu-toggle {
     display: inline-block;
   }
 
-  /* line 124, ../../src/styles/custom.scss */
+  /* line 144, ../../src/styles/custom.scss */
   .inset {
     padding: 100px 0 0 15px;
   }

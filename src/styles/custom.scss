@@ -9,7 +9,7 @@
 
 .post-head {
   color: grey;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #sidebar-wrapper {
@@ -84,6 +84,26 @@
     display: inline-block;
   }
 }
+
+// .content-subheader {
+//   float: right;
+//   margin-top: 60px;
+//   position: fixed;
+//   width: 100%;
+//   z-index: 10;
+//   height: 30px;
+//   line-height: 30px;
+//   /*background: aliceblue;*/
+//   background: rgba(112, 138, 144, 0.45);
+//   h1 {
+//     font-size: 22px;
+//     margin: 0;
+//     margin-left: 20px;
+//     line-height: 30px;
+//     display: inline-block;
+//   }
+// }
+
 
 #menu-toggle {
   display: none;

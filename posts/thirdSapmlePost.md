@@ -1,7 +1,8 @@
 {
   title: "Albert Abril",
   date:   "2013-08-3",
-  description: "iasdjklfasfdadsasfafas"
+  description: "iasdjklfasfdadsasfafas",
+  section: "Tech"
 }
 
 Macaroon halvah tootsie roll cupcake. Chocolate marzipan pie fruitcake
