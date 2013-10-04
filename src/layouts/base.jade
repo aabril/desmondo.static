@@ -4,6 +4,11 @@ mixin postHead(post)
     a(href="#{data.baseUrl}#{post.url}")
       h1.post-title= post.title
     span.post-date!= [post.date.getUTCFullYear(), post.date.getUTCMonth() + 1, post.date.getUTCDate()].join(' &#183; ')
+    br
+    span.post-date #{post.date}
+    br
+    span.post-date #{post.section}
+
 
 mixin post(post)
   mixin postHead(post)
@@ -17,7 +22,6 @@ html
     link(rel="icon", type="image/png", href="#{data.baseUrl}images/cabin.png")
     link(href="#{data.baseUrl}styles/sass-bootstrap.css", rel="stylesheet")
     link(href="#{data.baseUrl}styles/custom.css", rel="stylesheet")
-
     block head
       title= "My Blog"
   body
@@ -26,15 +30,15 @@ html
       #sidebar-wrapper
         ul.sidebar-nav
           li.sidebar-brand
-            a(href="#") @desmondo
+            a(href="#{data.baseUrl}") @desmondo
           li
-            a(href="#") Tech
+            a(href="#{data.baseUrl}tech/") Tech
           li
-            a(href="#") Personal
+            a(href="#{data.baseUrl}personal/") Personal
           li
-            a(href="#") Demos            
+            a(href="#{data.baseUrl}demos/") Demos            
           li
-            a(href="#") Contact
+            a(href="#{data.baseUrl}contact/") Contact
 
       #page-content-wrapper
         .content-header
@@ -42,9 +46,11 @@ html
             //- Fix this: button navigation when mobile responsive
             //- a(href="#").btn.btn-default
             //-   i.icon-reorder 
-            a(href="#") Section
-            span(style="color:red;")  » 
-            a(href="#", style="color:black;") Article Title
+            if post
+              if post.section
+                a(href="#{data.baseUrl}#{post.section}") #{post.section}
+                span(style="color:red;")  » 
+              a(href="#{data.baseUrl}#{post.url}", style="color:black;") #{post.title}
 
 
         //- .content-subheader

@@ -1,7 +1,11 @@
 extends ../layouts/base
 
 block content
+  h1 index
   p Hola
+  | #{pages[0].url}
+
+
   //- each post in posts
   //-   mixin post(post)
   //-   div.comments

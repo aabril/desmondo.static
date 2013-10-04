@@ -5,6 +5,7 @@ block head
   if post.description
     meta(name="description", content="#{post.description}")
 block content
-  p #{post.section}
+  //- p #{post.section}
+  //- | #{post.url}
   mixin post(post)
   //- include _social
