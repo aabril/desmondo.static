@@ -1,6 +1,8 @@
-extends ../../layouts/base
+extends ../layouts/base
 block head
   title About Me
 block content
-  h1 personal
+  h1 About Me
   p Hola Albert Com estas
+  p= JSON.stringify(locals)
+

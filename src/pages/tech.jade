@@ -1,0 +1,25 @@
+extends ../layouts/base
+
+block head
+  title About Me
+block content
+  h1 tech
+  p 
+  | Hola Albert Com estas
+
+  each post in posts
+    if post.section=="tech"
+       p 
+       | [ 
+       | title: #{post.title} , 
+       | description: #{post.description} , 
+       | date: #{post.date} ,
+       | url: #{post.url} ,
+       | ]
+
+       br
+       br
+       
+  //-      mixin postHead(post)
+
+  //- p= JSON.stringify(locals)

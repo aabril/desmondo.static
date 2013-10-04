@@ -32,13 +32,13 @@ html
           li.sidebar-brand
             a(href="#{data.baseUrl}") @desmondo
           li
-            a(href="#{data.baseUrl}tech/") Tech
+            a(href="#{data.baseUrl}tech.html") Tech
           li
-            a(href="#{data.baseUrl}personal/") Personal
+            a(href="#{data.baseUrl}personal.html") Personal
           li
-            a(href="#{data.baseUrl}demos/") Demos            
+            a(href="#{data.baseUrl}demos.html") Demos            
           li
-            a(href="#{data.baseUrl}contact/") Contact
+            a(href="#{data.baseUrl}contact.html") Contact
 
       #page-content-wrapper
         .content-header
@@ -48,9 +48,15 @@ html
             //-   i.icon-reorder 
             if post
               if post.section
-                a(href="#{data.baseUrl}#{post.section}") #{post.section}
+                a(href="#{data.baseUrl}#{post.section}.html") #{post.section}
                 span(style="color:red;")  » 
               a(href="#{data.baseUrl}#{post.url}", style="color:black;") #{post.title}
+            else
+              a(href="#{data.baseUrl}#{currentPage}.html") #{currentPage}
+              //- p= JSON.stringify(locals)
+              //- if currentIndex!=0
+              //-   span(style="color:red;")  » 
+
 
 
         //- .content-subheader
