@@ -3,9 +3,6 @@ extends ../layouts/base
 block head
   title About Me
 block content
-  h1 tech
-  p 
-  | Hola Albert Com estas
 
   each post in posts
     if post.section=="tech"
@@ -19,7 +16,34 @@ block content
 
        br
        br
-       
+
+
+  //- .blog-list-item
+  //-   h4 a(href="#{data.baseUrl}#{post.url}") #{post.title}
+  //-   p #{post.description}
+  //-   p #{post.date}
+
+  .blog-list-item
+    h4 Tooltips popovers in button groups require special setting
+    p 
+    | When using tooltips or popovers on elements within a
+    | .btn-group you'll have to specify the option container: 'body'
+    | to avoid unwanted side effects (such as the element growing wider
+    | and/or losing its rounded corners when the tooltip or popover is 
+    | triggered).
+
+  .blog-list-item
+    h4 Tooltips popovers in button groups require special setting
+    p 
+    | When using tooltips or popovers on elements within a
+    | .btn-group you'll have to specify the option container: 'body'
+    | to avoid unwanted side effects (such as the element growing wider
+    | and/or losing its rounded corners when the tooltip or popover is 
+    | triggered).
+
+
+
+
   //-      mixin postHead(post)
 
   //- p= JSON.stringify(locals)
