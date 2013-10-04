@@ -2,5 +2,11 @@ extends ../layouts/base
 block head
   title About Me
 block content
-  h1 personal
-  p Hola Albert Com estas
+  each post in posts
+    if post.section=="personal"
+      .blog-list-item
+        h4 
+          a(href="#{data.baseUrl}#{post.url}") #{post.title}
+        p #{post.description}
+        p #{post.date}
+      br 
